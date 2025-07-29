@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dribbble Clone - Discover the World's Top Designers & Creative Professionals">
+    <title>Dribbble Clone - Discover the World's Top Designers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/">Dribbble</a>
+                </div>
+                
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link">Shots</a></li>
+                        <li><a href="#" class="nav-link">Designers</a></li>
+                        <li><a href="#" class="nav-link">Services</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="auth-buttons">
+                    <a href="#" class="btn btn-secondary">Log in</a>
+                    <a href="#" class="btn btn-primary">Sign up</a>
+                </div>
+                
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Discover the<br>World's Top Designers</h1>
+                <p class="hero-description">Explore work from the most talented and accomplished designers ready to take on your next project.</p>
+                
+                <div class="search-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="shots">Shots</button>
+                        <button class="tab-btn" data-tab="designers">Designers</button>
+                        <button class="tab-btn" data-tab="services">Services</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Categories -->
+    <section class="popular-categories">
+        <div class="container">
+            <div class="categories-content">
+                <span class="categories-label">Popular:</span>
+                <div class="categories-list">
+                    <a href="#" class="category-link">dashboard</a>
+                    <a href="#" class="category-link">landing page</a>
+                    <a href="#" class="category-link">e-commerce</a>
+                    <a href="#" class="category-link">logo</a>
+                    <a href="#" class="category-link">card</a>
+                    <a href="#" class="category-link">icons</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Designers -->
+    <section class="featured-designers">
+        <div class="container">
+            <div class="designers-grid">
+                <div class="designer-card">
+                    <div class="designer-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">AM</div>
+                    <span class="designer-name">AmazingUI</span>
+                </div>
+                <div class="designer-card">
+                    <div class="designer-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">MU</div>
+                    <span class="designer-name">MUTI</span>
+                </div>
+                <div class="designer-card">
+                    <div class="designer-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">QC</div>
+                    <span class="designer-name">QClay</span>
+                </div>
+                <div class="designer-card">
+                    <div class="designer-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">DN</div>
+                    <span class="designer-name">Denys Nichele</span>
+                </div>
+                <div class="designer-card">
+                    <div class="designer-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">RH</div>
+                    <span class="designer-name">Robin Holesinsky</span>
+                </div>
+                <div class="designer-card">
+                    <div class="designer-avatar" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">DP</div>
+                    <span class="designer-name">The Digital Panda</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-layout">
+                <!-- Sidebar Filters -->
+                <aside class="sidebar">
+                    <div class="filter-section">
+                        <h3>Popular</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="filter-link active">Popular</a></li>
+                            <li><a href="#" class="filter-link">New & Noteworthy</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Categories</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="filter-link">Discover</a></li>
+                            <li><a href="#" class="filter-link">Animation</a></li>
+                            <li><a href="#" class="filter-link">Branding</a></li>
+                            <li><a href="#" class="filter-link">Illustration</a></li>
+                            <li><a href="#" class="filter-link">Mobile</a></li>
+                            <li><a href="#" class="filter-link">Print</a></li>
+                            <li><a href="#" class="filter-link">Product Design</a></li>
+                            <li><a href="#" class="filter-link">Typography</a></li>
+                            <li><a href="#" class="filter-link">Web Design</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-section">
+                        <h3>Color</h3>
+                        <div class="color-grid">
+                            <div class="color-swatch" style="background: #faddd1;" data-color="faddd1"></div>
+                            <div class="color-swatch" style="background: #fad3d1;" data-color="fad3d1"></div>
+                            <div class="color-swatch" style="background: #fad1e6;" data-color="fad1e6"></div>
+                            <div class="color-swatch" style="background: #e5d1fa;" data-color="e5d1fa"></div>
+                            <div class="color-swatch" style="background: #d4d1fa;" data-color="d4d1fa"></div>
+                            <div class="color-swatch" style="background: #d1e3fa;" data-color="d1e3fa"></div>
+                            <div class="color-swatch" style="background: #d1f3fa;" data-color="d1f3fa"></div>
+                            <div class="color-swatch" style="background: #d1faf0;" data-color="d1faf0"></div>
+                            <div class="color-swatch" style="background: #d1fad7;" data-color="d1fad7"></div>
+                            <div class="color-swatch" style="background: #ebfad1;" data-color="ebfad1"></div>
+                            <div class="color-swatch" style="background: #faf9d1;" data-color="faf9d1"></div>
+                            <div class="color-swatch" style="background: #faefd1;" data-color="faefd1"></div>
+                            <div class="color-swatch" style="background: #fae6d1;" data-color="fae6d1"></div>
+                            <div class="color-swatch" style="background: #ffffff; border: 1px solid #e1e5e9;" data-color="ffffff"></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Shots Grid -->
+                <div class="shots-container">
+                    <div class="shots-grid">
+                        <article class="shot-card">
+                            <div class="shot-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                            <div class="shot-content">
+                                <h3 class="shot-title">RIP Dribbble</h3>
+                                <div class="shot-meta">
+                                    <div class="shot-author">
+                                        <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">JS</div>
+                                        <span class="author-name">Jonathan Schubert</span>
+                                        <span class="pro-badge">Pro</span>
+                                    </div>
+                                    <div class="shot-stats">
+                                        <span class="likes">44</span>
+                                        <span class="views">1.8k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="shot-card">
+                            <div class="shot-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                            <div class="shot-content">
+                                <h3 class="shot-title">Watermelon3</h3>
+                                <div class="shot-meta">
+                                    <div class="shot-author">
+                                        <div class="author-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">DB</div>
+                                        <span class="author-name">Daniel Bodea / Kreatank</span>
+                                        <span class="pro-badge">Pro</span>
+                                    </div>
+                                    <div class="shot-stats">
+                                        <span class="likes">70</span>
+                                        <span class="views">7.5k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="shot-card">
+                            <div class="shot-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                            <div class="shot-content">
+                                <h3 class="shot-title">Hexabot UI UX Product Design</h3>
+                                <div class="shot-meta">
+                                    <div class="shot-author">
+                                        <div class="author-avatar" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">MS</div>
+                                        <span class="author-name">Mark Smith, Smi.</span>
+                                        <span class="pro-badge">Pro</span>
+                                    </div>
+                                    <div class="shot-stats">
+                                        <span class="likes">108</span>
+                                        <span class="views">5.8k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="shot-card">
+                            <div class="shot-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                            <div class="shot-content">
+                                <h3 class="shot-title">SunCourt Symbol</h3>
+                                <div class="shot-meta">
+                                    <div class="shot-author">
+                                        <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">SD</div>
+                                        <span class="author-name">Slavisa Dujkovic</span>
+                                        <span class="pro-badge">Pro</span>
+                                    </div>
+                                    <div class="shot-stats">
+                                        <span class="likes">73</span>
+                                        <span class="views">13.5k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="shot-card">
+                            <div class="shot-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                            <div class="shot-content">
+                                <h3 class="shot-title">I. THE MAGICIAN</h3>
+                                <div class="shot-meta">
+                                    <div class="shot-author">
+                                        <div class="author-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">EH</div>
+                                        <span class="author-name">Eight Hour Day</span>
+                                        <span class="pro-badge">Pro</span>
+                                    </div>
+                                    <div class="shot-stats">
+                                        <span class="likes">28</span>
+                                        <span class="views">2.7k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="shot-card">
+                            <div class="shot-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                            <div class="shot-content">
+                                <h3 class="shot-title">O. THE FOOL</h3>
+                                <div class="shot-meta">
+                                    <div class="shot-author">
+                                        <div class="author-avatar" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">EH</div>
+                                        <span class="author-name">Eight Hour Day</span>
+                                        <span class="pro-badge">Pro</span>
+                                    </div>
+                                    <div class="shot-stats">
+                                        <span class="likes">23</span>
+                                        <span class="views">2.3k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="shot-card">
+                            <div class="shot-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                            <div class="shot-content">
+                                <h3 class="shot-title">Hero Logo Design Part Two</h3>
+                                <div class="shot-meta">
+                                    <div class="shot-author">
+                                        <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">MD</div>
+                                        <span class="author-name">Mihai Dolganiuc</span>
+                                        <span class="pro-badge">Pro</span>
+                                    </div>
+                                    <div class="shot-stats">
+                                        <span class="likes">92</span>
+                                        <span class="views">16.7k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="shot-card">
+                            <div class="shot-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                            <div class="shot-content">
+                                <h3 class="shot-title">II. THE HIGH PRIESTESS</h3>
+                                <div class="shot-meta">
+                                    <div class="shot-author">
+                                        <div class="author-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">EH</div>
+                                        <span class="author-name">Eight Hour Day</span>
+                                        <span class="pro-badge">Pro</span>
+                                    </div>
+                                    <div class="shot-stats">
+                                        <span class="likes">19</span>
+                                        <span class="views">1.8k</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="load-more">
+                        <button class="btn btn-outline">Sign up to continue</button>
+                        <p class="load-more-text">Loading more…</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="/">Dribbble: the community for graphic design</a>
+                </div>
+                
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <ul>
+                            <li><a href="#">For designers</a></li>
+                            <li><a href="#">Hire talent</a></li>
+                            <li><a href="#">Inspiration</a></li>
+                            <li><a href="#">Advertising</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <ul>
+                            <li><a href="#">Jobs</a></li>
+                            <li><a href="#">Designers</a></li>
+                            <li><a href="#">Freelancers</a></li>
+                            <li><a href="#">Tags</a></li>
+                            <li><a href="#">Places</a></li>
+                            <li><a href="#">Resources</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="Pinterest">Pinterest</a>
+                    </div>
+                    
+                    <div class="footer-legal">
+                        <span>© 2025 Dribbble</span>
+                        <a href="#">Terms</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
